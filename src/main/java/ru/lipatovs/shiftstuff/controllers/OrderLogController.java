@@ -11,9 +11,9 @@ public class OrderLogController {
     @Autowired
     private OrderLogRepository orderLogRepository;
 
-    @GetMapping
+    @GetMapping("/orderlog")
     public String getOrderLogList(Model model){
         model.addAttribute("orderlogs",orderLogRepository.findAll());
-        return "orederlogs";
+        return "orederlogs/list";
     }
 }

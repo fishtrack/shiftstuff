@@ -11,7 +11,7 @@ public class OrderController {
     @Autowired
     private OrderRepository orderRepository;
 
-    @GetMapping
+    @GetMapping("/order")
     public String getOrderList(Model model){
         model.addAttribute("orders",orderRepository.findAll());
         return "orders/list";
