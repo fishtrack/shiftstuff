@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Сотрудники</title>
+</head>
+<body>
+<h2>Сотрудники</h2>
+<table class="table">
+    <thead class="text-white">
+    <tr>
+        <th class="bg-success" scope="cool">Id</th>
+        <th class="bg-success" scope="cool">Имя</th>
+        <th class="bg-success" scope="cool">Фамилия</th>
+        <th class="bg-success" scope="cool">Логин</th>
+        <th class="bg-success" scope="cool">Пароль</th>
+        <th class="bg-success" scope="cool">Карточка сотрудника</th>
+        <th class="bg-success" scope="cool">Доступ</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person: ${persons}">
+        <td th:text="${person.id}"></td>
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.surname}"></td>
+        <td th:text="${person.login}"></td>
+        <td th:text="${person.password}"></td>
+        <td th:text="${person.idCard}"></td>
+        <td th:text="${person.role}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

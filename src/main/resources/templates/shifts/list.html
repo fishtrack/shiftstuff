@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Смены</title>
+</head>
+<body>
+<h2>Смены</h2>
+<table class="table">
+    <thead class="text-white">
+    <tr>
+        <th class="bg-success" scope="cool">Id</th>
+        <th class="bg-success" scope="cool">Номер смены</th>
+        <th class="bg-success" scope="cool">Тип смены</th>
+        <th class="bg-success" scope="cool">Номер сотрудника</th>
+        <th class="bg-success" scope="cool">Дата</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="shift: ${shifts}">
+        <td th:text="${shift.id}"></td>
+        <td th:text="${shift.number}"></td>
+        <td th:text="${shift.type}"></td>
+        <td th:text="${shift.personId}"></td>
+        <td th:text="${shift.data}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

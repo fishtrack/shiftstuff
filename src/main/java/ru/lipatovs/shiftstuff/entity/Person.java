@@ -14,16 +14,16 @@ public class Person {
     public String role;
     public String name;
     public String surname;
-    public int id_card;
+    public int idCard;
 
-    public Person(int id, String login, String password, String role, String name, String surname, int id_card) {
+    public Person(int id, String login, String password, String role, String name, String surname, int idCard) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.role = role;
         this.name = name;
         this.surname = surname;
-        this.id_card = id_card;
+        this.idCard = idCard;
     }
 
     public int getId() {
@@ -74,12 +74,12 @@ public class Person {
         this.surname = surname;
     }
 
-    public int getId_card() {
-        return id_card;
+    public int getIdCard() {
+        return idCard;
     }
 
-    public void setId_card(int id_card) {
-        this.id_card = id_card;
+    public void setIdCard(int idCard) {
+        this.idCard = idCard;
     }
 
     public Person() {

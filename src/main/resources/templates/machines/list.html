@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Печатные машины</title>
+</head>
+<body>
+<h2>Печатные машины</h2>
+<table class="table">
+    <thead class="text-white">
+    <tr>
+        <th class="bg-success" scope="cool">Id</th>
+        <th class="bg-success" scope="cool">Название</th>
+        <th class="bg-success" scope="cool">Тип машины</th>
+        <th class="bg-success" scope="cool">Номер машины</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="machine: ${machines}">
+        <td th:text="${machine.id}"></td>
+        <td th:text="${machine.name}"></td>
+        <td th:text="${machine.type}"></td>
+        <td th:text="${machine.number}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
