@@ -14,6 +14,10 @@
         <th class="bg-success" scope="cool">Тип печати</th>
         <th class="bg-success" scope="cool">Номер машины</th>
         <th class="bg-success" scope="cool">Статус</th>
+        <th class="bg-success" scope="cool">Дата создания</th>
+        <th class="bg-success" scope="cool">План печати</th>
+        <th class="bg-success" scope="cool">Дата печати</th>
+        <th class="bg-success" scope="cool">Дата закрытия</th>
     </tr>
     </thead>
     <tbody>
@@ -23,6 +27,10 @@
         <td th:text="${order.printType}"></td>
         <td th:text="${order.machineId}"></td>
         <td th:text="${order.status}"></td>
+        <td th:text="${order.createdAt}"></td>
+        <td th:text="${order.planAt}"></td>
+        <td th:text="${order.startedAt}"></td>
+        <td th:text="${order.endedAt}"></td>
     </tr>
     </tbody>
 </table>

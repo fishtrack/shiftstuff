@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Действия с заказом</title>
+</head>
+<body>
+<h2>Действия с заказом</h2>
+<table class="table">
+    <thead class="text-white">
+    <tr>
+        <th class="bg-success" scope="cool">Id</th>
+        <th class="bg-success" scope="cool">Номер сотрудника</th>
+        <th class="bg-success" scope="cool">Номер заказа</th>
+        <th class="bg-success" scope="cool">Дата начала</th>
+        <th class="bg-success" scope="cool">Дата закрытия</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="orderLog: ${orderLogs}">
+        <td th:text="${orderLog.id}"></td>
+        <td th:text="${orderLog.userId}"></td>
+        <td th:text="${orderLog.orderId}"></td>
+        <td th:text="${orderLog.dateTimeStart}"></td>
+        <td th:text="${orderLog.dateTimeEnd}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

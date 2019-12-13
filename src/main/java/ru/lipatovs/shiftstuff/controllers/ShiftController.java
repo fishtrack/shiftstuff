@@ -12,7 +12,7 @@ public class ShiftController {
     private ShiftRepository shiftRepository;
 
     @GetMapping("/shift")
-    public getShiftList(Model model){
+    public String getShiftList(Model model){
         model.addAttribute("shifts", shiftRepository.findAll());
         return "shifts/list";
     }

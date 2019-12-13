@@ -20,8 +20,8 @@ public class OrderLog {
         this.id = id;
         this.userId = userId;
         this.orderId = orderId;
-        this.dateTimeStart;
-        this.dateTimeEnd;
+        this.dateTimeStart = dateTimeStart;
+        this.dateTimeEnd = dateTimeEnd;
     }
 
     public OrderLog() {
